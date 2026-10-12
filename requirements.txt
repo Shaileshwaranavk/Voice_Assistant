@@ -1,0 +1,36 @@
+# Veera - Windows 10/11, Python 3.10+  (3.11-3.14 tested)
+# Install with:   pip install -r requirements.txt   (install.bat does this for you)
+
+# --- voice ---
+SpeechRecognition>=3.10
+PyAudioWPatch>=0.2.12       # microphone input (drop-in PyAudio that has wheels for new Pythons)
+faster-whisper>=1.0         # main speech recogniser (downloads a ~150 MB model on first run)
+vosk>=0.3.45                # optional offline fallback recogniser
+pyttsx3>=2.90
+comtypes>=1.4
+
+# --- summaries only (needs GEMINI_API_KEY in .env) ---
+google-genai>=1.0
+
+# --- computer control ---
+pyautogui>=0.9.54
+pyperclip>=1.8
+psutil>=5.9
+Pillow>=10.0
+numpy>=1.26
+pycaw>=20240210             # volume
+screen_brightness_control>=0.20
+send2trash>=1.8             # delete -> Recycle Bin
+uiautomation>=2.0           # click buttons / tabs / menus by name
+
+# --- documents ---
+pypdf>=4.0
+pymupdf>=1.24               # scanned PDFs / OCR
+python-docx>=1.1
+openpyxl>=3.1
+python-pptx>=0.6.23
+
+# --- built-in commands ---
+wikipedia>=1.4
+pywhatkit>=5.4
+pygoogle_image>=1.0
